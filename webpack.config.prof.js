@@ -14,7 +14,7 @@ const opts = {
 
 module.exports = {
   entry: {
-    app: "./src/js/app.js"
+    app: "./src/js/appProf.js"
   },
   mode: process.env.NODE_ENV === "production" ? "production" : "development",
   devtool:
@@ -45,20 +45,20 @@ module.exports = {
       chunkFilename: "css/app.css"
     }),
     // Copy fonts and images to dist
-    new CopyWebpackPlugin({
-      patterns: [
-        { from: "src/fonts", to: "fonts" },
-        { from: "src/img", to: "img" }
-      ]
-    }),
+    //new CopyWebpackPlugin({
+    //  patterns: [
+    //    { from: "src/fonts", to: "fonts" },
+    //    { from: "src/img", to: "img" }
+    //  ]
+    //}),
     // Speed up webpack build
     new HardSourceWebpackPlugin(),
     // Copy dist folder to static
-    new FileManagerPlugin({
-      onEnd: {
-        copy: [{ source: "../Apps.Blazor.Web/wwwroot/**/*", destination: "./static" }]
-      }
-    })
+    // new FileManagerPlugin({
+    //   onEnd: {
+    //     copy: [{ source: "../Apps.Blazor.Web/wwwroot/**/*", destination: "./static" }]
+    //   }
+    // })
   ],
   module: {
     rules: [
@@ -79,33 +79,33 @@ module.exports = {
         ]
       },
       // Load fonts
-      {
-        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: "/[name].[ext]",
-              outputPath: "fonts/",
-              publicPath: "../fonts/"
-            }
-          }
-        ]
-      },
+      // {
+      //   test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+      //   use: [
+      //     {
+      //       loader: "file-loader",
+      //       options: {
+      //         name: "/[name].[ext]",
+      //         outputPath: "fonts/",
+      //         publicPath: "../fonts/"
+      //       }
+      //     }
+      //   ]
+      // },
       // Load images
-      {
-        test: /\.(png|jpg|jpeg|gif)(\?v=\d+\.\d+\.\d+)?$/,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: "[name].[ext]",
-              outputPath: "img/",
-              publicPath: "../img/"
-            }
-          }
-        ]
-      }
+      // {
+      //   test: /\.(png|jpg|jpeg|gif)(\?v=\d+\.\d+\.\d+)?$/,
+      //   use: [
+      //     {
+      //       loader: "file-loader",
+      //       options: {
+      //         name: "[name].[ext]",
+      //         outputPath: "img/",
+      //         publicPath: "../img/"
+      //       }
+      //     }
+      //   ]
+      // }
     ]
   },
   resolve: {
