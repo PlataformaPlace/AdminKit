@@ -34,7 +34,7 @@
   ],
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --config webpack.config.js --progress",
-    "buildProf": "cross-env NODE_ENV=production webpack -p --config webpack.config.prof.js",
+    "buildProf": "cross-env NODE_ENV=production webpack --config webpack.config.prof.js",
     "watch": "webpack --config webpack.config.js --watch --progress",
     "start": "webpack serve --config webpack.config.js --progress",
     "prepublishOnly": "cross-env NODE_ENV=production webpack --progress --config webpack.config.js"
