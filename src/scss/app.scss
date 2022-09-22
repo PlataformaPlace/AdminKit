@@ -1,7 +1,7 @@
 /*!
- * AdminKit v3.0.1 (https://adminkit.io/)
- * Copyright 2021 Paul Laros
- * Copyright 2021 AdminKit
+ * AdminKit v3.3.0 (https://adminkit.io/)
+ * Copyright 2022 Paul Laros
+ * Copyright 2022 AdminKit
  * Licensed under MIT (https://github.com/adminkit/adminkit/blob/master/LICENSE)
  */
 
@@ -11,6 +11,7 @@
 // Bootstrap
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/maps";
 @import "~bootstrap/scss/mixins";
 @import "~bootstrap/scss/utilities";
 @import "~bootstrap/scss/root";
@@ -28,9 +29,7 @@
 @import "~bootstrap/scss/nav";
 @import "~bootstrap/scss/navbar";
 @import "~bootstrap/scss/card";
-@import "~bootstrap/scss/breadcrumb";
 @import "~bootstrap/scss/badge";
-@import "~bootstrap/scss/alert";
 @import "~bootstrap/scss/list-group";
 @import "~bootstrap/scss/close";
 @import "~bootstrap/scss/helpers";
@@ -38,12 +37,8 @@
 
 // Theme mixins
 @import "2-mixins/button";
-@import "2-mixins/modal";
-@import "2-mixins/switch";
 
 // Theme components
-@import "3-components/accordion";
-@import "3-components/alert";
 @import "3-components/avatar";
 @import "3-components/buttons";
 @import "3-components/card";
@@ -52,7 +47,6 @@
 @import "3-components/dropdown";
 @import "3-components/feather";
 @import "3-components/footer";
-@import "3-components/forms";
 @import "3-components/hamburger";
 @import "3-components/list-group";
 @import "3-components/main";
@@ -60,14 +54,13 @@
 @import "3-components/reboot";
 @import "3-components/sidebar";
 @import "3-components/sizing";
+@import "3-components/stat";
 @import "3-components/tables";
 @import "3-components/type";
 @import "3-components/wrapper";
 
 // Theme utilities
-@import "4-utilities/background";
 @import "4-utilities/cursors";
-@import "4-utilities/overflow";
 
 // 3rd party plugins
 @import "~jsvectormap/dist/css/jsvectormap";
@@ -75,5 +68,5 @@
 @import "~flatpickr/dist/flatpickr";
 
 // 3rd party plugin styles
-@import "5-vendor/simplebar";
 @import "5-vendor/flatpickr";
+@import "5-vendor/simplebar";

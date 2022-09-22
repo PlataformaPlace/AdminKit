@@ -2,6 +2,38 @@
 
 All notable changes to this project will be documented in this file.
 
+## [3.3.0] 2022-08-10
+
+- Fix table in card styling issues
+- Upgrade to Webpack v5.74.0
+- Upgrade to Bootstrap v5.2.0
+- Upgrade dependencies
+
+## [3.2.0] 2022-02-04
+
+- Migrate to Dart Sass
+- Upgrade to Webpack v5.68.0
+- Upgrade to Bootstrap v5.1.3
+- Upgrade dependencies
+
+## [3.1.0] 2021-09-29
+
+- Replace OptimizeCssAssetsPlugin with CssMinimizerPlugin
+- Remove HardSourceWebpackPlugin
+- Upgrade to Webpack v5.55.1
+- Upgrade to Bootstrap v5.1.1
+- Upgrade dependencies
+
+## [3.0.2] 2021-05-19
+
+- Add file structure to README.md
+- Add icons to dashboard (/index.html)
+- Add marketing page (/upgrade-to-pro.html)
+- Remove unused sass files
+- Remove unused dependencies
+- Various visual changes
+- Upgrade dependencies
+
 ## [3.0.1] 2021-05-17
 
 - Fix Simplebar bug on auth pages
